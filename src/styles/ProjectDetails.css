@@ -1,0 +1,65 @@
+
+.project-detail-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.project-detail-hero__inner { padding-top: 160px; padding-bottom: 56px; }
+
+.project-detail-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+}
+
+.project-detail-hero__cat {
+  background: var(--orange);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.project-detail-hero__heading { font-size: clamp(2.2rem, 5vw, 3.4rem); max-width: 800px; }
+.project-detail-hero__meta { margin-top: 12px; color: rgba(255, 255, 255, 0.75); font-size: 1.05rem; }
+
+.project-detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 64px; }
+
+.project-detail-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
+.project-detail-gallery img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+
+.project-detail-sidebar { background: #fff; border: 1px solid var(--line-dark); padding: 32px; align-self: start; }
+
+.project-detail-dl { display: grid; gap: 18px; }
+.project-detail-dl dt { font-size: 0.8rem; color: var(--steel); margin-bottom: 4px; }
+.project-detail-dl dd { margin: 0; font-family: var(--font-display); font-weight: 600; }
+
+.project-not-found { padding: 200px 32px 120px; text-align: center; }
+.project-not-found__heading { font-size: 2rem; color: var(--navy); margin-bottom: 16px; }
+.project-not-found__sub { color: var(--steel); margin-bottom: 32px; }
+
+@media (max-width: 800px) {
+  .project-detail-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   PROJECT DETAIL EXTRAS
+═══════════════════════════════════════════════════════════════════════════ */
+.project-detail-body {
+  font-size: 1.1rem;
+  color: var(--charcoal);
+  line-height: 1.7;
+}
+
+.project-detail-cta { margin-top: 28px; }
+

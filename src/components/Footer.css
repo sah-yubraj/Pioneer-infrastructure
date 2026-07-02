@@ -1,0 +1,75 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════════════════════════════ */
+.footer {
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__inner { padding: 72px 32px 32px; }
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 48px;
+}
+
+.footer__brand-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.footer__brand-name span { color: var(--orange); }
+
+.footer__tagline { max-width: 320px; font-size: 0.95rem; margin-bottom: 24px; }
+
+.footer__socials { display: flex; gap: 12px; }
+
+.footer__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  transition: border-color 0.2s, color 0.2s;
+}
+.footer__social-btn:hover { border-color: var(--orange); color: var(--orange); }
+
+.footer__col-label {
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__nav-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.footer__nav-list a { font-size: 0.95rem; }
+
+.footer__contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+
+.footer__contact-item { display: flex; gap: 10px; align-items: flex-start; font-size: 0.95rem; }
+.footer__contact-item--inline { align-items: center; }
+
+.footer__whatsapp { padding-left: 28px; color: rgba(255, 255, 255, 0.5); font-size: 0.88rem; margin-top: 4px; }
+
+.footer__social-handles { font-size: 0.88rem; color: rgba(255, 255, 255, 0.5); }
+.footer__social-handles span { color: rgba(255, 255, 255, 0.7); }
+
+.footer__bottom {
+  border-top: 1px solid var(--line);
+  margin-top: 56px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 768px) {
+  .footer__grid { grid-template-columns: 1fr; gap: 36px; }
+}
+

@@ -1,0 +1,31 @@
+
+.portfolio-hero {
+  background: var(--navy);
+  color: #fff;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+.portfolio-hero__heading { font-size: clamp(2.2rem, 5vw, 3.4rem); max-width: 700px; }
+
+.portfolio-filters { display: flex; gap: 12px; margin-bottom: 48px; flex-wrap: wrap; }
+
+.filter-btn {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 10px 20px;
+  border: 1px solid var(--line-dark);
+  background: transparent;
+  color: var(--navy);
+  transition: all 0.15s ease;
+}
+.filter-btn--active { border-color: var(--orange); background: var(--orange); color: #fff; }
+
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.portfolio-empty { color: var(--steel); }
+
+@media (max-width: 900px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+
